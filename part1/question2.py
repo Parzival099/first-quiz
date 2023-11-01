@@ -16,6 +16,11 @@
 # `question2_test.py.`
 
 swapper = None
+def swapper(x):
+    if  len(x) == 2:
+        return (x[1], x[0])
+    else:
+        return x
 
-def run_swapper(list_of_tuples):
-  return list(map(swapper, list_of_tuples))
+def run_swapper(x):
+  return list(map(swapper,x))
